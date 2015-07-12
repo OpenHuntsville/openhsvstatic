@@ -3,8 +3,8 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <title>#openHSV - About #openHSV</title>
-	    <meta name="description" content="#openHSV was built to provide a freelancer, moonlighter, and consultant resources to Huntsville's small businesses and startups.">
+	    <title>#openHSV - Login</title>
+	    <meta name="description" content="Log in to #openHSV to edit your profile.">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -14,7 +14,7 @@
 	    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	    <script src="/assets/js/modernizr.js"></script>
 	</head>
-	<body class="about">
+	<body>
 		<header>
 			<div class="overlay">
 				<div class="header-top">
@@ -33,7 +33,7 @@
 									<a href="/people">People</a>
 								</li>
 								<li>
-									<a href="/about" class="selected">About</a>
+									<a href="/about">About</a>
 								</li>
 								<li>
 									<a class="fancybox" data-fancybox-type="iframe" href="/feedback">Feedback</a>
@@ -61,12 +61,36 @@
 					</li>
 					<li>&nbsp;/&nbsp;</li>
 					<li>
-						<a href="/">About</a>
+						<a href="/people">People</a>
+					</li>
+					<li>&nbsp;/&nbsp;</li>
+					<li>
+						<a href="/people/login">Log In</a>
 					</li>
 				</ul>
 				<div class="content-body">
-					<p>OpenHSV was conceived as a free community resource for Huntsville's startup and small business population. Our goal was to create an open directory of individuals and firms who are willing to offer their services to help fellow Huntsville-based businesses grow. Any individual professional or group of professionals is welcome to create a listing on OpenHSV. Together, we can boost our economy and help our local business community achieve new heights.</p>
-					<p>OpenHSV was designed and built by <a href="http://twitter.com/cgbeaman">Chris Beaman</a>, <a href="http://twitter.com/refractingdrew">Andrew Hall<a/>, <a href="http://twitter.com/skylenewman">Kyle Newman</a>, <a href="http://twitter.com">Joe MacKenzie</a>, <a href="http://twitter.com/moderntarra">Tarra Anzalone</a>, and <a href="http://twitter.com/bryanp">Bryan Powell</a>.</p>
+					<div class="form">
+						<h2>Log In to #openHSV</h2>
+						<p>Enter your email address and password to log in to #openHSV</p>
+						<form data-scope="people" data-prop="action" action="/people" method="post">
+							<fieldset class="margin-t">
+								<ul>
+									<li>
+										<label>Email</label>
+										<input type="text" data-prop="email" name="people[email]" value="" placeholder="Email Address">
+									</li>
+									<li>
+										<label>Password</label>
+										<input type="password" data-prop="password" name="people[password]" value="" placeholder="Password">
+									</li>
+									</li>
+									<li>
+										<input type="submit" value="Log In">
+									</li>
+								</ul>
+							</fieldset>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

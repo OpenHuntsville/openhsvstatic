@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>#openHSV - Edit Kyle Newman's profile</title>
+	    <meta name="description" content="Edit Kyle Newman's freelancer, moonlighter, or consultant profile.">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="/assets/css/normalize.css">
+	    <link rel="stylesheet" href="/assets/css/style.css">
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,800|Montserrat' rel='stylesheet' type='text/css'>
+	    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	    <script src="/assets/js/modernizr.js"></script>
+	</head>
+	<body class="about">
+		<header>
+			<div class="overlay">
+				<div class="header-top">
+					<div class="wrapper">
+						<div class="title">
+							<h1>
+								<a href="/">
+									<img src="/assets/img/openhsv-logo.png" alt="OpenHSV Logo" />
+								</a>
+							</h1>
+							<p>A directory of Huntsville's freelancers, moonlighters, and consultants</p>
+						</div>
+						<nav>
+							<ul class="pages">
+								<li>
+									<a href="/people">People</a>
+								</li>
+								<li>
+									<a href="/about">About</a>
+								</li>
+								<li>
+									<a class="fancybox" data-fancybox-type="iframe" href="/feedback">Feedback</a>
+								</li>
+							</ul>
+							<ul class="create-login">
+								<li>
+									<a href="/people/new">Create Profile</a>
+								</li>
+								<li>
+									<a href="/people/login">Log In</a>
+								</li>					
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="gradient"></div>
+		</header>
+		<div class="content">
+			<div class="wrapper">
+				<ul class="breadcrumbs">
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>&nbsp;/&nbsp;</li>
+					<li>
+						<a href="/people">People</a>
+					</li>
+					<li>&nbsp;/&nbsp;</li>
+					<li>
+						<a href="/people/kyle-newman">Kyle Newman</a>
+					</li>
+					<li>&nbsp;/&nbsp;</li>
+					<li>
+						<a href="/people/kyle-newman/edit">People</a>
+					</li>
+				</ul>
+				<div class="content-body">
+					<div class="form">
+						<h2>Update your profile</h2>
+						<p>Update your profile by editing the fields below. A moderator will review your changes before your edits are published.</p>
+						<p>Have a question? Don't see your industry listed? <a class="fancybox" data-fancybox-type="iframe" href="/feedback">Contact us</a>.</p>
+						<form id="people-form" data-scope="people" data-prop="action" action="/people/kyle-newman" method="post" data-id="42">
+							<fieldset class="margin-t">
+								<legend>Profile Information</legend>
+								<ul>
+									<li>
+										<label>First Name</label>
+										<input type="text" data-prop="first_name" name="people[first_name]" value="Kyle">
+									</li>
+									<li>
+										<label>Last Name</label>
+										<input type="text" data-prop="last_name" name="people[last_name]" value="Newman">
+									</li>
+									<li>
+										<label>Categories</label>
+										<input type="text" data-prop="categories_string" name="people[categories_string]" value="Software, Lampshade">
+									</li>
+									<li>
+										<label>Email</label>
+										<input type="text" data-prop="email" name="people[email]" value="kyle@skylenewman.com">
+									</li>
+									<li>
+										<label>Company</label>
+										<input type="text" data-prop="company" name="people[company]" value="Hickory Dickory Dock">
+									</li>
+									<li>
+										<label>Twitter</label>
+										<input type="text" data-prop="twitter" name="people[twitter]" value="skylenewman">
+									</li>
+									<li>
+										<label>LinkedIn</label>
+										<input type="text" data-prop="linkedin" name="people[linkedin]" value="    8988dn ˘¿">
+									</li>
+									<li>
+										<label>Website</label>
+										<input type="text" data-prop="url" name="people[url]" value="¿¿¿¿¿¿????">
+									</li>
+									<li>
+										<label>Image URL</label>
+										<input type="text" data-prop="image_url" name="people[image_url]" value="">
+									</li>
+									<li>
+										<label>Other Information</label>
+										<textarea data-prop="other_info" name="people[other_info]">Banana</textarea>
+									</li>
+									<li>
+										<label>Bio</label>
+										<textarea data-prop="bio" id="bio" name="people[bio]">I have hands.</textarea>
+										<p class="smalltext">You have <span id="bio-character-count"></span> characters left.</p>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset>
+								<legend>Administrator rights</legend>
+								<ul>
+									<li>
+										<label>Is admin?</label>
+										<input data-prop="admin" type="checkbox" value="#" name="people[admin]" checked="checked">
+									</li>
+								</ul>
+							</fieldset>
+							<input id="submit" type="submit" value="Save">
+						</form>
+
+						<script type="text/javascript">
+						$(document).ready(function(){
+							$("#submit").click(function(e){
+								if (($("#custom_url").val()).indexOf("-") != -1)
+								{
+									e.preventDefault();
+								}
+							});
+						});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="originals">
+			<div class="wrapper">
+				<h3>We make, design, engineer, create, illuminate, record, capture, code, program, open, decide, speak, blend, paint, construct, launch, markup, ignite, form, defend, ink.</h3>
+				<p>We are Huntsville</p>
+				<img src="/assets/img/openhsv-logo.png" alt="OpenHSV logo" />
+			</div>
+		</div>
+		<footer>
+			<div class="wrapper">
+				<p>Copyright &copy; 2015 OpenHSV. <a href="/terms">Terms of Service</a>.</p>
+			</div>
+		</footer>
+	<script src="/assets/js/jquery.fancybox.pack.js"></script>
+	<script src="/assets/js/jquery.fancybox-buttons.js"></script>
+	<script src="/assets/js/tinynav.min.js"></script>
+	<script src="/assets/js/main.js"></script>
+	</body>
+</html>
