@@ -3,8 +3,8 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <title>#openHSV - Edit Kyle Newman's profile</title>
-	    <meta name="description" content="Edit Kyle Newman's freelancer, moonlighter, or consultant profile.">
+	    <title>#openHSV - Create your profile</title>
+	    <meta name="description" content="Create your #openHSV profile.">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -66,38 +66,34 @@
 					</li>
 					<li>&nbsp;/&nbsp;</li>
 					<li>
-						<a href="/people/kyle-newman">Kyle Newman</a>
-					</li>
-					<li>&nbsp;/&nbsp;</li>
-					<li>
-						<a href="/people/kyle-newman/edit">Edit your profile</a>
+						<a href="/people/create">Create your profile</a>
 					</li>
 				</ul>
 				<div class="content-body">
 					<div class="form">
-						<h2>Edit your profile</h2>
-						<p>Update your profile by editing the fields below. Your listing will be live on the site as soon as you click 'Save'</p>
-						<p>Have a question? <a class="fancybox" data-fancybox-type="iframe" href="/feedback">Contact us</a>.</p>
+						<h2>Create your profile</h2>
+						<p>Create your free profile by filling out the fields below. A moderator will review your profile before it's added to the directory. We'll send you an email once your profile has been approved and your listing is live.</p>
+						<p>Have a question? Don't see your specialty listed? <a class="fancybox" data-fancybox-type="iframe" href="/feedback">Contact us</a>.</p>
 						<form id="people-form" data-scope="people" data-prop="action" action="/people/kyle-newman" method="post" data-id="42">
 							<fieldset class="margin-t">
 								<legend>Profile Information</legend>
 								<ul>
 									<li>
 										<label>First Name</label>
-										<input type="text" data-prop="first_name" name="people[first_name]" value="Kyle" placeholder="First Name">
+										<input type="text" data-prop="first_name" name="people[first_name]" value="" placeholder="First Name">
 									</li>
 									<li>
 										<label>Last Name</label>
-										<input type="text" data-prop="last_name" name="people[last_name]" value="Newman" placeholder="Last Name">
+										<input type="text" data-prop="last_name" name="people[last_name]" value="" placeholder="Last Name">
 									</li>
 									<li>
 										<label>First Specialty</label>
 										<select type="text" data-prop="category_one" class="chosen">
 											<!-- Unselectable -->
-											<option class="category" value="" disabled>Select a specialty</option>
+											<option class="category" value="" disabled selected>Select a specialty</option>
 											<!-- Selectable -->
 											<option class="category">Art and Design</option>
-        									<option class="item" selected>Graphic Design</option>
+        									<option class="item">Graphic Design</option>
         									<option class="item">Animation</option>
         									<option class="item">Illustration</option>
         									<option class="category">Business</option>
@@ -109,9 +105,9 @@
 										<label>Second Specialty (optional)</label>
 										<select type="text" data-prop="category_two" class="chosen">
 											<!-- Unselectable -->
-											<option class="category" value="" disabled>Select a specialty</option>
+											<option class="category" value="" disabled selected>Select a specialty</option>
 											<!-- Selectable -->
-											<option class="category" selected>Art and Design</option>
+											<option class="category">Art and Design</option>
         									<option class="item">Graphic Design</option>
         									<option class="item">Animation</option>
         									<option class="item">Illustration</option>
@@ -124,7 +120,7 @@
 										<label>Third Specialty (optional)</label>
 										<select type="text" data-prop="category_three" class="chosen">
 											<!-- Unselectable -->
-											<option class="category" value="" disabled>Select a specialty</option>
+											<option class="category" value="" disabled selected>Select a specialty</option>
 											<!-- Selectable -->
 											<option class="category">Art and Design</option>
         									<option class="item">Graphic Design</option>
@@ -132,29 +128,29 @@
         									<option class="item">Illustration</option>
         									<option class="category">Business</option>
         									<option class="item">Business Management</option>
-        									<option class="item" selected>Business Strategy</option>
+        									<option class="item">Business Strategy</option>
 										</select>
 									</li>
 									<li>
 										<label>Twitter</label>
-										<input type="text" data-prop="twitter" name="people[twitter]" value="http://twitter.com/skylenewman" placeholder="Twitter URL (optional)">
+										<input type="text" data-prop="twitter" name="people[twitter]" value="" placeholder="Twitter URL (optional)">
 									</li>
 									<li>
 										<label>LinkedIn</label>
-										<input type="text" data-prop="linkedin" name="people[linkedin]" value="http://www.linkedin.com/in/skylenewman" placeholder="LinkedIn URL (optional)">
+										<input type="text" data-prop="linkedin" name="people[linkedin]" value="" placeholder="LinkedIn URL (optional)">
 									</li>
 									<li>
 										<label>Website</label>
-										<input type="text" data-prop="url" name="people[url]" value="http://www.skylenewman.com" placeholder="Website URL (optional)">
+										<input type="text" data-prop="url" name="people[url]" value="" placeholder="Website URL (optional)">
 									</li>
 									<li>
 										<label>Bio</label>
-										<textarea data-prop="bio" id="bio" name="people[bio]" placeholder="Enter your bio (160 characters or less)">Software and Website Designer and Developer</textarea>
+										<textarea data-prop="bio" id="bio" name="people[bio]" placeholder="Enter your bio (160 characters or less)"></textarea>
 										<p class="smalltext">You have <span id="bio-character-count"></span> characters left.</p>
 									</li>
 									<li>
 										<label>Image URL</label>
-										<input type="text" data-prop="image_url" name="people[image_url]" value="http://www.gravatar.com/img/3qi5TgF6.png">
+										<input type="text" data-prop="image_url" name="people[image_url]" value="">
 									</li>
 								</ul>
 							</fieldset>
