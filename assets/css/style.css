@@ -39,6 +39,12 @@ h1, h2 {
 .content {
 	background-color: #f6f6f6;
 }
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 
 /*================ HEADER =================
 =========================================*/
@@ -165,7 +171,7 @@ nav li a.selected, nav li a.selected:hover {
 	font-weight: normal;
 	margin: 0 0 15px;
 }
-.home .chevron {
+.home .chevron, .hero .chevron {
 	display: block;
 	clear: both;
 	width: 30px;
@@ -173,17 +179,17 @@ nav li a.selected, nav li a.selected:hover {
 	margin: 0 auto;
 	height: 40px;
 }
-.home .chevron:before, .home .chevron:after {
+.home .chevron:before, .home .chevron:after, .hero .chevron:before, .hero .chevron:after {
     position: absolute;
     display: block;
     content: "";
     border: 14px solid transparent;
 }
-.home .chevron:before {
+.home .chevron:before, .hero .chevron:before {
     top: 0;
     border-top-color: #D8D8D8;
 }
-.home .chevron:after {
+.home .chevron:after, .hero .chevron:after {
     top: -3px;
     border-top-color: #1E2E2F;
 }
@@ -308,6 +314,20 @@ nav li a.selected, nav li a.selected:hover {
 /*============== ABOUT PAGE ===============
 =========================================*/
 
+.hero {
+	background: url('../img/aboutushero.jpg') no-repeat left -130px;
+	background-size: 100%;
+}
+.hero .overlay {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 100px 0 10px;
+}
+.hero h2 {	
+	color: #f6f6f6;
+}
+.hero .chevron:after {
+	border-top-color: #424243;
+}
 .breadcrumbs {
 	overflow: hidden;
 	padding: 15px 0;
@@ -342,7 +362,6 @@ nav li a.selected, nav li a.selected:hover {
 	width: 28%;
 	text-align: left;
 	margin-right: 4%;
-	vertical-align: text-top;
 }
 .about .content-body li:last-child {
 	margin-right: 0;
@@ -465,12 +484,6 @@ nav li a.selected, nav li a.selected:hover {
 }
 .tinynav { 
 	display: none 
-}
-#submenu {
-	display: none;
-}
-.selected.active #submenu {
-	display: visible;
 }
 
 /*================ INDEX ==================
@@ -998,6 +1011,12 @@ footer a:hover {
 	}
 	.about .content-body h2 {
 		font-size: 2em;
+	}
+	.hero {
+		background-position: left -50px;
+	}
+	.hero .overlay {
+		padding-top: 40px;
 	}
 }
 @media only screen and (max-width: 500px) {
